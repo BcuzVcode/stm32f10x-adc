@@ -44,8 +44,7 @@ uint16_t ADC_Read(void){
 }
 
 int main(void){
-
-	SystemInit();
+	
 	ADC_Init();
 		
 	while(1){
