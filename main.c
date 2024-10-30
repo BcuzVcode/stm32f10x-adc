@@ -13,6 +13,10 @@ void USART_Init(void);
 void USART_Init(void) {
     initialise_monitor_handles(); // Initialize semihosting
 }
+void initialise_monitor_handles(void) {
+    // Simple breakpoint for semihosting initialization
+    __asm volatile("bkpt 0xAB");
+}
 
 void ADC_Init(void){
 
